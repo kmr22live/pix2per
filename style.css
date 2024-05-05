@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom:30px;
+    border-radius: 30px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+
+input[type="number"] {
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #c5c5c5;
+    font-size: medium;
+    font-weight: bold;
+    max-width: 200px;
+}
+
+input[type="number"]:focus {
+    outline-color: none;
+}
+
+#percentageResult {
+    margin-top: 20px;
+    font-weight: bold !important;
+    text-align: center;
+    font-size:15px; 
+}
+
+input[type="number"]:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+button {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#convertButton {
+    align-items: center;
+    background-color: red;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-weight: bold;
+}
+
+#convertButton:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+#convertButton:hover:after {
+    transform: translate(0, 0);
+}
+
+#convertButton:active {
+    background-color: #e8e8e8;
+    outline: 0;
+    color: black;
+}
+
+#convertButton:hover {
+    outline: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    position: relative;
+}
+
+h1 {
+    color: #2d2d2d;
+}
+
+.text {
+    font-family: "Fira Mono", monospace;
+    font-weight: 700;
+    letter-spacing: 0.2ch;
+    font-size: 40px;
+    line-height: 1;
+    text-align: center;
+}
+
+span {
+    --offset: 3;
+    position: absolute;
+    color: red;
+    left: calc(var(--offset) * 1.35ch + calc(var(--offset) * 0.2ch));
+    animation: flicker 3s linear infinite;
+    top: 0;
+    z-index: 1;
+}
+
+@keyframes flicker {
+
+    0%,
+    19.9%,
+    22%,
+    62.9%,
+    64%,
+    64.9%,
+    70%,
+    100% {
+        opacity: 0.99;
+        text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+
+    20%,
+    21.9%,
+    63%,
+    63.9%,
+    65%,
+    69.9% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+fieldset {
+    font-family: "Fira Mono", monospace;
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    color: #a3a3a3;
+}
+
+label {
+    font-size: 15px;
+    text-align: center;
+}
+
+input {
+    background: #a3a3a3;
+    border: 1px solid #000;
+}
