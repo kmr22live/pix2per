@@ -3,7 +3,6 @@
     "name": "Pix 2 Per",
     "version": "1.0",
     "description": "Converts pixel values to percentages.",
-    "permissions": ["activeTab"],
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
