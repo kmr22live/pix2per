@@ -79,7 +79,7 @@ button:hover {
     background-color: #45a049;
 }
 
-#convertButton {
+#convertButton, #copyButton {
     align-items: center;
     background-color: red;
     border: 2px solid #111;
@@ -104,7 +104,7 @@ button:hover {
     font-weight: bold;
 }
 
-#convertButton:after {
+#convertButton:after,#copyButton:after {
     background-color: #111;
     border-radius: 8px;
     content: "";
@@ -119,17 +119,17 @@ button:hover {
     z-index: -1;
 }
 
-#convertButton:hover:after {
+#convertButton:hover:after,#copyButton:hover:after {
     transform: translate(0, 0);
 }
 
-#convertButton:active {
+#convertButton:active,#copyButton:active {
     background-color: #e8e8e8;
     outline: 0;
     color: black;
 }
 
-#convertButton:hover {
+#convertButton:hover,#copyButton:hover {
     outline: 0;
 }
 
